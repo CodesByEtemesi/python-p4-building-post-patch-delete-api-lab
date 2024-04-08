@@ -37,6 +37,7 @@ def update_bakery(id):
 
     return make_response(jsonify(bakery.to_dict()), 200)
 
+
 @app.route('/baked_goods', methods=['POST'])
 def create_baked_good():
     data = request.form
